@@ -115,7 +115,7 @@ The Veteran data type will be a boolean because true will express that they are 
     guidelines.
 */
 
-const newCustomer = {
+const newCustomer = { 
     name: 'Jason',
     age: 18,
     allergies: 'none', 
