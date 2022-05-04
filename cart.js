@@ -37,10 +37,9 @@ const cart = [
 
 
 const  sum = cart.reduce(function(accumulator, curValue) {
+    return accumulator + curValue.price}, 0);
 
-    return accumulator + curValue.price}, 0)
-
-console.log(sum)
+console.log(sum);
 // const summedPrice = cart.reduce((totalPrice, currentFoodItem) => totalPrice + currentFoodItem.price, 0);
 // console.log(summedPrice);
 
@@ -64,14 +63,11 @@ console.log(sum)
 
 //CODE HERE
 const calcFinalPrice = (cartTotal, couponValue, tax) => {
-    let taxTotal = sum / tax;
-    let taxedPrice = 
-    let cartTotal = taxedPrice - 
+    let finalPrice = (cartTotal * (1 + tax)) - couponValue; 
     return (`Your final price after tax and coupons is ${finalPrice}`)
 }
 
-calcFinalPrice(sum, 6.00, .06);
-console.log(calcFinalPrice);
+console.log(calcFinalPrice(sum, 6.00, .06));
 
 
 //////////////////PROBLEM 3////////////////////

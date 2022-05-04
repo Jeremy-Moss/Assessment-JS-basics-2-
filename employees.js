@@ -44,7 +44,7 @@ getSchedule(){
 */
 
 //CODE HERE
-const empOne =  new Employee('Jeremy', 'Monday-Friday 11AM - 7PM');
+const empOne =  new Employee('Jess', 'weekday mornings, weekday afternoons');
 
 
 
@@ -54,7 +54,7 @@ const empOne =  new Employee('Jeremy', 'Monday-Friday 11AM - 7PM');
 */
 
 //CODE HERE
-empOne.getSchedule();
+getSchedule.empOne();
 
 
 
